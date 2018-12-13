@@ -1,0 +1,16 @@
+.caro-div {
+    background-image: url('./Images/Hawaii.jpg');
+    height: 900px;
+}
+
+.caro-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form {
+    margin-top: 150px;
+    width: 50%;
+    margin-left: 25%;
+}
