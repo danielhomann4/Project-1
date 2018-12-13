@@ -14,3 +14,23 @@ form {
     width: 50%;
     margin-left: 25%;
 }
+
+.searchBar {
+    position: absolute;
+    top: 40%;
+    width: 750px;
+}
+
+.dropdown {
+    margin-top: -100px;
+    margin-left: 40px;
+}
+
+.inspire {
+    margin-bottom: 55px;
+}
+
+.explore {
+    margin-bottom: 50px;
+    margin-top: -20px;
+}
