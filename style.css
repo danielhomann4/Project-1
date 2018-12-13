@@ -15,6 +15,12 @@ form {
     margin-left: 25%;
 }
 
+.discover {
+    position: absolute;
+    top: 30%;
+    margin-left: 180px;
+}
+
 .searchBar {
     position: absolute;
     top: 40%;
@@ -23,7 +29,7 @@ form {
 
 .dropdown {
     margin-top: -100px;
-    margin-left: 40px;
+    margin-left: -10px;
 }
 
 .inspire {
@@ -33,4 +39,8 @@ form {
 .explore {
     margin-bottom: 50px;
     margin-top: -20px;
+}
+
+.placeholder {
+    margin-left: 25px;
 }
