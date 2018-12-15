@@ -44,3 +44,10 @@ form {
 .placeholder {
     margin-left: 25px;
 }
+
+.footer {
+    background-color: cornflowerblue;
+    width: 100%;
+    height: 50px;
+    text-align: center;
+}
