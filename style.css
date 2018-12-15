@@ -51,3 +51,8 @@ form {
     height: 50px;
     text-align: center;
 }
+
+#map {
+    margin-left: -350px;
+    margin-bottom: 15px;
+}
