@@ -1,0 +1,39 @@
+
+
+p { color: white;
+    font-size: 16px;}
+
+.facts { 
+            background-color: green;
+            width: 500px;
+            height: 700px;
+            float: left;
+            margin-top: 15px;
+            margin-left: 1%;
+            } 
+
+.image {    
+            background-color: red;
+            width: 500px; 
+            height: 700px;
+            float: left;
+            margin-top: 15px;
+            margin-right: 1%;
+            
+}
+
+  .factsFooter {
+            background-color: lightblue;        
+            width: 500px;
+            height: 284px;
+            float: left;
+            position: absolute;
+            margin-top: 431px;
+            margin-left: 1%;
+}
+
+
+
+
+
+
