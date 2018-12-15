@@ -1,0 +1,59 @@
+
+
+.title  { 
+    color: lightblue;
+   
+}
+
+p { padding-top: 10px;
+    padding-bottom: 10px;
+     
+}
+
+.ttd { 
+    height: 380px;
+   }
+
+.factBlock {
+    height: 350px;
+    
+}
+.facts {
+    height: 400px;
+    padding-top: 10px;
+}
+
+.todoBlock { 
+    margin-top: 40px;
+}
+
+.todoFooter {
+    padding: 10px;
+}
+
+
+.footer {
+    background-color: #059FFD;
+    height: 150px;
+    color: white;
+    width: 101%;
+
+    }
+
+.b {     
+    margin-bottom: 5%;
+    margin-top: 5%;
+         grid-gap: 5%;
+}
+
+@media only screen and (max-width: 480px) {
+
+}
+
+@media only all and (max-width: 768px) {
+
+}
+
+@media only all and (min-width: 769px) and (max-width: 1024) {
+
+} 
