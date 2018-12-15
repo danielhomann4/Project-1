@@ -32,6 +32,12 @@ form {
     margin-left: -10px;
 }
 
+.dropdown-menu {
+    height: 250px;
+    overflow: auto;
+}
+
+
 .inspire {
     margin-bottom: 55px;
 }
