@@ -1,0 +1,151 @@
+/* dianna */
+
+.title  { 
+    color: lightblue;
+    font-family: "Courier New", Courier, monospace;
+    font-weight: bold;
+   
+}
+
+p { padding-top: 10px;
+    padding-bottom: 10px;
+    font-family: "Courier New", Courier, monospace;   
+}
+
+.ttd { 
+    height: 380px;
+   }
+
+.factBlock {
+    height: 350px;
+    
+}
+.facts {
+    height: 400px;
+    padding-top: 10px;
+}
+
+.todoBlock { 
+    margin-top: 40px;
+}
+
+.todoFooter {
+    padding: 10px;
+}
+
+
+.footer {
+    background-color:#f2f2f2;
+    height: 150px;
+    color: #262626;
+    width: 101%;
+
+    }
+
+.b {     
+    margin-bottom: 5%;
+    margin-top: 5%;
+         grid-gap: 5%;
+}
+
+/* dianna end*/
+
+
+
+/* daniel */
+.caro-div {
+    background-image: url('./Images/Hawaii.jpg');
+    height: 900px;
+}
+
+.caro-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form {
+    margin-top: 150px;
+    width: 50%;
+    margin-left: 25%;
+}
+
+.discover {
+    position: absolute;
+    top: 30%;
+    margin-left: 180px;
+}
+
+.searchBar {
+    position: absolute;
+    top: 40%;
+    width: 750px;
+}
+
+.dropdown {
+    margin-top: -100px;
+    margin-left: -10px;
+}
+
+.dropdown-menu {
+    height: 250px;
+    overflow: auto;
+}
+
+
+.inspire {
+    margin-bottom: 55px;
+    font-family: "Courier New", Courier, monospace;
+    color: lightblue;
+    font-weight: bold;
+}
+
+.explore {
+    margin-bottom: 50px;
+    margin-top: -20px;
+    font-family: "Courier New", Courier, monospace;
+}
+
+.placeholder {
+    margin-left: 25px;
+}
+
+#map {
+    margin-left: -350px;
+    margin-bottom: 15px;
+}
+
+/* daniel end*/
+
+/* kristine */
+.navbar {
+    background-color: #e6e6e6;
+}
+
+.nav-text, .fas {
+    color:  #1a1a1a;
+}
+.discover, .searchBar {
+    font-family: "Courier New", Courier, monospace;
+    text-align: center; 
+    color: white;
+
+}
+.footer-text {
+    font-family: "Courier New", Courier, monospace;
+    text-align: center; 
+}
+
+.text-footer, .footer-signature {
+    font-family: "Courier New", Courier, monospace;
+    text-align: center;
+}
+h5, h1, .searchBar, .factToDoItem, .factListItem {
+    font-family: "Courier New", Courier, monospace; 
+}
+
+.btn {
+    font-family: "Courier New", Courier, monospace; 
+}
+
+/* kristine end */
