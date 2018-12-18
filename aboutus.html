@@ -16,177 +16,169 @@
     <!-- JavaScript CDN -->
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
         crossorigin="anonymous"></script>
-    <!-- CSS link-->
-    <link rel="stylesheet" href="aboutus.css">
-    <link rel="stylesheet" herf="reset.css">
     <!-- Font Awesome CDN -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP"
         crossorigin="anonymous">
+    <!-- CSS link-->
+    <link rel="stylesheet" href="aboutus.css">
+    <link rel="stylesheet" herf="reset.css">
+    <!-- DSB 12/16 Added -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+
     <title>Project 1</title>
 </head>
 
-<!-- Main Container -->
-<div class="contanier">
-    <!-- Start of Nav Bar -->
+<body>
+    <!-- Main Container -->
+    <div class="contanier">
+        <!-- Start of Nav Bar -->
+        <div class="row">
+            <div class="col-md-12">
+                <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                    <a class="navbar-brand" href="#"></a><i class="fas fa-user-ninja"></i><a style="padding-left: 15px; padding-right: 10px;">Awesome
+                        Secret Agents</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <!-- DSB added links to pages -->
+                                <a class="nav-link" href="index.html">Home<span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <!-- DSB added links to pages -->
+                                <a class="nav-link" href="aboutus.html">About Us</a>
+                            </li>
+                            <li class="nav-item">
+                                <!-- DSB added links to pages -->
+                                <a class="nav-link" href="destinationpage.html">Destination Info</a>
+                            </li>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <!-- End of Nav Bar-->
+        <!-- Start of the Carousel -->
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="d-block w-100" src="./Images/architecture-bay-bridgebanner.jpg" alt="First slide">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="Images/lake-landscape-mountainbanner.jpg" alt="Second slide">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="Images/budapestbanner.jpg" alt="Second slide">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="Images/beach2banner.jpg" alt="Third slide">
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+
+    </div>
+    <!-- End of carousel -->
+    <!-- Begin Destination Facts -->
+    <div class="container">
+        <div class="row facts">
+            <div class="col-md-6 factBlock">
+                <h1 class="title">ABOUT US</h1>
+                <p><span>Our vision was to create a landing page to inspire your travel dreams and ignite the
+                        wanderlust in
+                        all of us.</span></p>
+                <p><span>Whether you discover with us, seek with us, or deam with us, we believe our purpose is to
+                        create
+                        impressions that will stay with you for a lifetime.</span></p>
+                <p><span>It comes from our belief that life is richer when we truly connect to the people and thee
+                        world
+                        around us. As Mika Diffee once said, <i>"Travel is the only thing you buy that makes you
+                            richer".</i></span></p>
+            </div>
+            <div class="col-md-6">
+                <a><img src="./images/plane.png" alt="Hawaii" style="max-width:100%;height:auto;"></a>
+            </div>
+        </div>
+
+    </div>
+    <!-- End of Destination Facts-->
+
+    <!-- Start of Things to Do-->
+    <div class="container">
+        <div class="row facts todoBlock">
+            <div class="col-md-6 ttd">
+                <h1 class="title">OUR TEAM</h1>
+                <p>Awesome Secret Agents are a group comprised of talented and travel inspired individuals. Our
+                    development team was put together by our fearless leader, Sammy Roberts. Our entire team collabored
+                    to
+                    fuse together a user experience in travel that we hope you will
+                    enjoy.</p>
+                <p>Our front-end developlemt was inspired and executed by our travel consultants Dianna Sutton
+                    Brown, Kristine Caponpon, and Daniel Homann. (top row: left to right).</p>
+                <p>Our API gurus include Desiree Ibon, and Sammy Albasateneh with research and project support done
+                    in Trello by Mika Diffee. (bottom row: left to right).</p>
+
+            </div>
+
+            <div class="col-md-2">
+                <!--- Dianna's Photo -->
+                <a href="https://placeholder.com"><img src="https:/via.placeholder.com/180?text=Photo+Placeholder style="
+                        style="max-width:100%;height:auto;" class="b" alt="Dianna Sutton Brown"></a>
+                <!-- Desiree' Photo -->
+                <a href="https://placeholder.com"><img src="./Images/Desiree.png" style="max-width:100%;height:auto;"
+                        class="b" alt="Desiree Ibon"></a>
+            </div>
+            <div class="col-md-2">
+                <!-- Kristine's Photo-->
+                <a href="https://placeholder.com"><img src="./Images/Kristine.jpg" style="max-width:100%;height:auto;"
+                        class="b" alt="Kristine Caponpon"></a>
+                <!-- Sammy's Photo-->
+                <a href="https://placeholder.com"><img src="https:/via.placeholder.com/180?text=Photo+Placeholder style="
+                        style="max-width:100%;height:auto;" class="b" alt="Sammy Albasateneh"></a>
+            </div>
+            <div class="col-md-2">
+                <!-- Daniel's Photo-->
+                <a href="https://placeholder.com"><img src="https:/via.placeholder.com/180?text=Photo+Placeholder style="
+                        style="max-width:100%;height:auto;" class="b" alt="Daniel Homann"></a>
+                <!-- Mika's Photo -->
+                <a href="https://placeholder.com"><img src="https:/via.placeholder.com/180?text=Photo+Placeholder style="
+                        style="max-width:100%;height:auto;" class="b" alt="Mika Diffee"></a>
+            </div>
+
+
+        </div>
+    </div>
+
+
+    <!-- new footer -->
     <div class="row">
         <div class="col-md-12">
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                <a class="navbar-brand" href="#"></a><i class="fas fa-user-ninja"></i><a style="padding-left: 15px; padding-right: 10px;">Awesome
-                    Secret Agents</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">About</a>
-                        </li>
-                </div>
-            </nav>
-        </div>
-    </div>
-    <!-- End of Nav Bar-->
-
-    <!-- Start of the Carousel -->
-    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-        <ol class="carousel-indicators">
-            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-        </ol>
-        <div class="carousel-inner caro-wrapper">
-            <div class="carousel-item active caro-div">
-                <img class="d-block w-100" src="./assets/budapest.jpg" alt="Budapest">
-                <form algin="center">
-
-            </div>
-            <div class="carousel-item">
-                <img class="d-block w-100" src="./assets/lionafrica.jpeg" alt="Lion Africa">
-            </div>
-            <div class="carousel-item">
-                <img class="d-block w-100" src="./assets/queenstownnz.jpg" alt="Queens Towns">
+            <div class="footer todoFooter">
+                <h2 class="footer-text">Discover Your World</h2>
+                <p class="text-footer">"Never regret what you did not do. Always travel safe, travel far, travel wide,
+                    and
+                    travel often."</p>
+                <p class="footer-signature"> - <i class="fas fa-user-ninja"></i> Awesome Secret Agents</p>
             </div>
         </div>
-        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-        </a>
-        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-        </a>
     </div>
-</div>
-<!-- End of carousel -->
-
-<div class="container">
-    <div class="row facts">
-        <div class="col-md-6 factBlock">
-            <h1 class="title">Our Vision</h1>
-            <p><span>Our vision was to create a landing page to inspire your travel dreams and ingite the wanderlust in
-                    all
-                    of us.
-                </span></p>
-            <p><span>Whether you discover with us, seek with us, or dream with us, we believe our purpose is to create
-                    impressions that will stay with you for a lifetime.
-                </span></p>
-            <p><span>It comes from our belief that life is richer when we truly connect to the people and the world
-                    around us. As Mika Diffee once said, <i>"Travel is the only thing you buy that makes you richer.</i>
-                </span></p>
-
-            <p><span>Never regret what you did not do and always travel safe, travel far, travel wide, and travel often. <i>“Twenty years from now you will be more disappointed by the
-                        things that you didn’t do than by the ones you did do. So throw off the bowlines. Sail away
-                        from the safe harbor. Catch the trade winds in your sails. Explore. Dream. Discover.” – Mark
-                        Twain</i></span></p>
-        </div>
-        <div class="col-md-6">
-            <a><img src="./assets/dubrovnik.jpg" alt="Dubrovnik" style="max-width:100%;height:auto;"></a>
-        </div>
-    </div>
-
-</div>
-<!-- End of Our Vision container-->
-
-<!-- Start of Our team container-->
-<div class="container">
-    <div class="row facts todoBlock">
-        <div class="col-md-6 ttd">
-            <h1 class="title">Our Team.</h1>
-            <p>
-                <span>Awesome Secret Agents are a group comprised of talented and travel inspired individuals. Our
-                    development team was put together by our fearless leader, Sammy Roberts.
-                </span>
-            </p>
-            <p>
-                <span>Our front-end developlemt was inspired and executed by our travel consultants Dianna Sutton
-                    Brown, Kristine Caponpon, and Daniel Homann.
-                </span>
-            </p>
-            <p>
-                <span>Our API gurus include Desiree Ibon, and Sammy Albasateneh with research and project support done
-                    in Trello by Mika Diffee.
-                </span>
-            </p>
-            <p>
-                <span>Our entire team collabored to fuse together a user experience in travel that we hope you will
-                    enjoy.
-                </span>
-            </p>
-
-        </div>
-        <div class="col-md-2">
-            <a href="https://placeholder.com"><img src="https:/via.placeholder.com/180?text=Photo+Placeholder style="
-                    style="max-width:100%;height:auto;" class="b"></a>
-            <a href="https://placeholder.com"><img src="https:/via.placeholder.com/180?text=Photo+Placeholder style="
-                    style="max-width:100%;height:auto;" class="b"></a>
-        </div>
-        <div class="col-md-2">
-            <a href="https://placeholder.com"><img src="https:/via.placeholder.com/180?text=Photo+Placeholder style="
-                    style="max-width:100%;height:auto;" class="b"></a>
-            <a href="https://placeholder.com"><img src="https:/via.placeholder.com/180?text=Photo+Placeholder style="
-                    style="max-width:100%;height:auto;" class="b"></a>
-        </div>
-        <div class="col-md-2">
-            <a href="https://placeholder.com"><img src="https:/via.placeholder.com/180?text=Photo+Placeholder style="
-                    style="max-width:100%;height:auto;" class="b"></a>
-            <a href="https://placeholder.com"><img src="https:/via.placeholder.com/180?text=Photo+Placeholder style="
-                    style="max-width:100%;height:auto;" class="b"></a>
-        </div>
-    </div>
-</div>
-<!--- End of Our Team container-->
-
-<!-- Footer -->
-<div class="row footer todoFooter">
-    <div class="col-span-12">
-        <blockquote>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A cumque perferendis explicabo
-                reiciendis, doloribus quo facilis! Minus voluptatem enim nisi a, eligendi eaque quis
-                cupiditate unde alias, sequi vel molestiae!
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta nostrum optio, saepe libero
-                nam in unde officia laboriosam est cupiditate recusandae facere reprehenderit dicta at cum
-                sit facilis nemo perferendis!</p>
-        </blockquote>
-    </div>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-<body>
 
 </body>
 
 </html>
+<!--- End of Our Team container-->
