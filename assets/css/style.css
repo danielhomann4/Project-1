@@ -2,42 +2,48 @@
 
 .title  { 
     color: lightblue;
-   
+    font-size: 28px;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif; 
 }
 
 p { padding-top: 10px;
     padding-bottom: 10px;
+    text-align: center;
+    font-family: 'Roboto', sans-serif; 
      
 }
-
+/* 
 .ttd { 
     height: 380px;
-   }
+   } */
 
 .factBlock {
     height: 350px;
     
 }
 .facts {
-    height: 400px;
-    padding-top: 10px;
+    height: 425px;
+    padding-top: 20px;
 }
 
 .todoBlock { 
-    margin-top: 40px;
+    margin-top: 5px;
 }
 
 .todoFooter {
     padding: 10px;
+    
+    
 }
 
 
 .footer {
-    background-color: #059FFD;
-    height: 150px;
-    color: white;
+    background-color: #f2f2f2;
+    height: 180px;
+    color: #262626;
     width: 101%;
-
+      
     }
 
 .b {     
@@ -51,10 +57,10 @@ p { padding-top: 10px;
 
 
 /* daniel */
-.caro-div {
+/* .caro-div {
     background-image: url('./Images/Hawaii.jpg');
     height: 900px;
-}
+} */
 
 .caro-wrapper {
     display: flex;
@@ -72,12 +78,15 @@ form {
     position: absolute;
     top: 30%;
     margin-left: 180px;
+    font-family: 'Roboto', sans-serif; 
 }
 
 .searchBar {
     position: absolute;
     top: 40%;
     width: 750px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px; 
 }
 
 .dropdown {
@@ -93,36 +102,54 @@ form {
 
 .inspire {
     margin-bottom: 55px;
+    color: lightblue;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif; 
 }
 
 .explore {
     margin-bottom: 50px;
     margin-top: -20px;
+    font-family: 'Roboto', sans-serif; 
 }
 
 .placeholder {
     margin-left: 25px;
 }
 
-/* .footer {
-    background-color: cornflowerblue;
-    width: 100%;
-    height: 50px;
-    text-align: center;
-} */
 
 #map {
-    margin-left: -350px;
-    margin-bottom: 15px;
+    margin-left: -300px;
+    margin-bottom: 15px
 }
 
-/* daniel end*/
 
-/* kristine */
-.todoFooter {
-    padding: 10px;
+.navbar {
+    background-color: #ffffff;
 }
-.todoFooter {
-    padding: 10px;
+
+.nav-text, .fas {
+    color:  #1a1a1a;
 }
-/* kristine end */
+.discover, .searchBar {
+   
+    text-align: center; 
+    color: white;
+
+}
+.footer-text {
+    font-family: 'Roboto', sans-serif;
+    text-align: center; 
+}
+
+.text-footer, .footer-signature {
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+}
+h5, h1, .searchBar, .factToDoItem, .factListItem {
+    font-family: 'Roboto', sans-serif; 
+}
+
+.btn {
+    font-family: 'Roboto', sans-serif; 
+}
