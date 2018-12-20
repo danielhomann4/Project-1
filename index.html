@@ -21,6 +21,8 @@
   <!-- DSB 12/16 Added -->
   <link rel="stylesheet" href="./assets/css/style.css">
   <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <!-- 12/19 added javascript  -->
+  <link rel="javascript" href="assets/javascript/js.js">
 
   <title>Project 1</title>
 </head>
@@ -89,8 +91,8 @@
       <h1 class="discover">Discover Your World</h1>
       <div class="form-group searchBar">Search a City
         <label for="formGroupExampleInput"></label>
-         <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Search">
-         <button type="button" class="btn btn-secondary">SUBMIT</button>
+        <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Search">
+        <button type="button" class="btn btn-secondary">SUBMIT</button>
       </div>
     </form>
     <!-- destination button -->
@@ -188,80 +190,101 @@
     </div>
     <script type="text/javascript">
       var locations = [
-        ['Venice, Italy', 45.4408, 12.3155, 5],
-        ['Hong Kong, China', 22.3964, 114.1095, 5],
-        ['Istanbul, Turkey', 41.0082, 28.9784, 5],
-        ['New York, NY', 40.7128, 74.0060, 5],
-        ['London, UK', 51.5074, 0.1278, 5],
-        ['Chefchaouen, Morocco', 35.1688, 5.2684, 5],
-        ['Paris, France', 48.8566, 2.3522, 5],
-        ['Cape Town, South Africa', 33.9249, 18.4241, 5],
-        ['Amsterdam, the Netherlands', 52.3680, 4.9036, 5],
-        ['St. Petersburg, Russia', 59.9343, 30.3351, 5],
-        ['Beirut, Lebanon', 33.8938, 35.5018, 5],
-        ['Kyoto, Japan', 35.0016, 135.7680, 5],
-        ['Queenstown, New Zealand', 45.0312, 168.6626, 5],
-        ['Barcelona, Spain', 41.3851, 2.1734, 5],
-        ['Singapore', 1.3521, 103.8198, 5],
-        ['Havana, Cuba', 23.1136, 82.3666, 5],
-        ['Florence, Italy', 23.7696, 11.2558, 5],
-        ['Sydney, Australia', 33.8688, 151.2093, 1],
-        ['Lisbon, Portugal', 38.7223, 9.1393, 5],
-        ['Rio de Janeiro, Brazil', 22.9068, 43.1729, 5],
-        ['Jaipur, India', 26.9124, 75.7873, 3],
-        ['Lucerne, Switerzerland', 47.0502, 8.3093, 2],
-        ['Shanghai, China', 31.2304, 121.4737, 1]
-        ['San Francisco, California', 37.7749, 122.4194, 1],
-        ['Rome, Italy', 41.9028, 12.4964, 5],
-        ['Bruges, Belgium', 51.2093, 3.2247, 5],
-        ['Stockholm, Sweden', 59.3293, 18.0686, 5],
-        ['Cartagena, Columbia', 10.3910, 75.4794, 5],
-        ['Budapest, Hungary', 47.4979, 19.0402, 5],
-        ['Valparaiso, Chile', 33.0472, 71.6127, 5],
-        ['Prague, Czech Republic', 50.0755, 14.4378, 5],
-        ['Edinburgh, Scotland', 55.9533, 3.1833, 5],
-        ['Busan, South Korea', 35.1796, 129.0756, 5],
-        ['Mexico City, Mexico', 19.4326, 99.1332, 5],
-        ['Charleston, South Carolina', 32.7765, 79.9311, 5],
-        ['Dubrovnik, Croatia', 42.6507, 18.0944, 5],
-        ['Riga, Latvia', 56.9496, 24.1052, 5],
-        ['Quito, Ecuador', 0.1807, 78.4678, 5],
-        ['Vienna, Austria', 48.2802, 16.3738, 5],
-        ['Quebec City, Canada', 46.8139, 71.2080, 5],
-        ['Jerusalem', 31.7683, 35.2137, 5],
-        ['Buenos Aires, Argentina', 34.6037, 58.3816, 5],
-        ['Isfahan, Iran', 45.4408, 12.3155, 5],
-        ['Seville, Spain', 37.3891, 5.9845, 5],
-        ['Muscat, Oman', 23.5829, 58.4059, 5],
-        ['Chicago, Illinois', 41.8781, 87.6298, 5],
-        ['Kiev, Ukraine', 50.4501, 30.5234, 5],
-        ['Ho Chi Minh, City, Vietnam', 10.8231, 106.6297, 5],
-        ['Hamburg, Germany', 53.5511, 9.9937, 5],
-        ['Krakow, Poland', 50.0647, 19.9450, 5],
+        ['Venice, Italy', 45.429267, 12.277523],
+        ['Hong Kong, China', 22.282391, 114.072465],
+        ['Istanbul, Turkey', 41.057340, 28.947132],
+        ['New York, NY', 40.709323, -73.986501],
+        ['London, UK', 51.514246, -0.151205],
+        ['Chefchaouen, Morocco', 35.169827, -5.275102],
+        ['Paris, France', 48.8566, 2.3522],
+        ['Cape Town, South Africa', -33.9249, 18.4241],
+        ['Amsterdam, the Netherlands', 52.3680, 4.9036],
+        ['St. Petersburg, Russia', 60.012870, 30.424343],
+        ['Beirut, Lebanon', 33.8938, 35.5018],
+        ['Kyoto, Japan', 35.0016, 135.7680],
+        ['Queenstown, New Zealand', -45.031031, 168.662244],
+        ['Barcelona, Spain', 41.3851, -2.1734],
+        ['Singapore', 1.3521, 103.8198],
+        ['Havana, Cuba', 23.1136, -82.3666],
+        ['Florence, Italy', 43.769615, 11.259838],
+        ['Sydney, Australia', -33.859302, 151.179679],
+        ['Lisbon, Portugal', 38.7223, -9.1393],
+        ['Rio de Janeiro, Brazil', -22.9068, -43.1729],
+        ['Jaipur, India', 26.9124, 75.7873],
+        ['Lucerne, Switerzerland', 47.0502, 8.3093],
+        ['Shanghai, China', 31.2304, 121.4737],
+        ['San Francisco, California', 37.7749, -122.4194],
+        ['Rome, Italy', 41.9028, 12.4964],
+        ['Bruges, Belgium', 51.2093, 3.2247],
+        ['Stockholm, Sweden', 59.3293, 18.0686],
+        ['Cartagena, Columbia', 10.3910, -75.4794],
+        ['Budapest, Hungary', 47.4979, 19.0402],
+        ['Valparaiso, Chile', 33.0472, 71.6127],
+        ['Prague, Czech Republic', 50.0755, 14.4378],
+        ['Edinburgh, Scotland', 55.9533, 3.1833],
+        ['Busan, South Korea', 35.1796, 129.0756],
+        ['Mexico City, Mexico', 19.4326, -99.1332],
+        ['Charleston, South Carolina', 32.78115, -79.9316],
+        ['Dubrovnik, Croatia', 42.6507, 18.0944],
+        ['Riga, Latvia', 56.9496, 24.1052],
+        ['Quito, Ecuador', -0.179040, -78.462131],
+        ['Vienna, Austria', 48.2802, 16.3738],
+        ['Quebec City, Canada', 46.8139, 71.2080],
+        ['Jerusalem', 31.7683, 35.2137],
+        ['Buenos Aires, Argentina', -34.60851, -58.37349],
+        ['Isfahan, Iran', 32.663997, 51.680161],
+        ['Seville, Spain', 37.3891, -5.9845],
+        ['Muscat, Oman', 23.5829, 58.4059],
+        ['Chicago, Illinois', 41.8781, -87.6298],
+        ['Kiev, Ukraine', 50.4501, 30.5234],
+        ['Ho Chi Minh, City, Vietnam', 10.8231, 106.6297],
+        ['Hamburg, Germany', 53.5511, 9.9937],
+        ['Krakow, Poland', 50.0647, 19.9450],
+   
       ];
-
+   
       var map = new google.maps.Map(document.getElementById('map'), {
         zoom: 2,
         center: new google.maps.LatLng(41.9028, 12.4964),
         mapTypeId: google.maps.MapTypeId.ROADMAP
       });
-
+   
       var infowindow = new google.maps.InfoWindow();
-
+   
       var marker, i;
-
+   
       for (i = 0; i < locations.length; i++) {
         marker = new google.maps.Marker({
           position: new google.maps.LatLng(locations[i][1], locations[i][2]),
           map: map
         });
-
+   
         google.maps.event.addListener(marker, 'click', (function (marker, i) {
           return function () {
             infowindow.setContent(locations[i][0]);
             infowindow.open(map, marker);
           }
         })(marker, i));
+   
+   
+      }
+   
+      function initMap() {
+        var myLatLng = {
+          lat: -25.363,
+          lng: 131.044
+        };
+   
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 4,
+          center: myLatLng
+        });
+   
+        var marker = new google.maps.Marker({
+          position: myLatLng,
+          map: map,
+          title: 'Hello World!'
+        });
       }
     </script>
 </body>
