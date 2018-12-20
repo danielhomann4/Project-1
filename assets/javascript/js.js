@@ -45,6 +45,10 @@ function findbyDestination() {
 // find address function
 function findAddress() {
     var address = document.getElementById("gmap_where").value;
+    $("#photos-div").empty();
+    $("#photography-div").empty();
+
+    //$(".countryFacts").empty();
     // script uses our 'geocoder' in order to find location by address name
     console.log("PLACE SEARCHED IS: " + address);
     geocoder.geocode({ 'address': address }, function (results, status) {
@@ -90,7 +94,7 @@ function findAddress() {
 function findPlaces() {
     //Empties the div for every search
     $("#photos-div").empty();
-
+    $("#photography-div").empty();
     // prepare variables (filter)
     var type = document.getElementById('gmap_type').value;
     //var type = "art gallery";
@@ -152,6 +156,7 @@ function createMarker(obj) {
     var queryURL = 'https://cors-anywhere.herokuapp.com/https://maps.googleapis.com/maps/api/place/details/json?placeid=' + obj.place_id + '&key=AIzaSyAB6hBjI4Pq16M1kIXqSD7rW2hXcY9CE_k';
 
     var ref;
+    var image_ref;
     $.ajax({
         url: queryURL,
         method: "GET"
@@ -165,79 +170,84 @@ function createMarker(obj) {
 
 
         var queryURL2 = 'https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photoreference=' + ref + '&key=AIzaSyAB6hBjI4Pq16M1kIXqSD7rW2hXcY9CE_k';
+        image_ref =
         console.log(queryURL2);
         var new_img = $("<img>");
         new_img.attr("src", queryURL2);
         //$('#category').text(response.result.types[0]);
-        $('#photos-div').append('<li>' + response.result.name + ': ' +response.result.vicinity + '</li>' );
-       
+        new_img.width('300px');
+        new_img.height('300px');
+        $('#photos-div').append('<li>' + response.result.name + ': ' + response.result.vicinity + '</li>');
+    
+        $("#photography-div").append(new_img);
     });
+};
 // restcountries api
 
 
 var input = document.getElementById('gmap_where');
-var autocomplete = new google.maps.places.Autocomplete(input,{types: ['(cities)']});
-google.maps.event.addListener(autocomplete, 'place_changed', function(){
-   var place = autocomplete.getPlace();
+var autocomplete = new google.maps.places.Autocomplete(input, { types: ['(cities)'] });
+google.maps.event.addListener(autocomplete, 'place_changed', function () {
+    var place = autocomplete.getPlace();
 
     var country = place.adr_address
-    var html = "<div>" +country.split(",").join("") + "</div>";
+    var html = "<div>" + country.split(",").join("") + "</div>";
     var countryName = ($(html).find(".country-name").text());
     var Name = "Country: " + ($(html).find(".country-name").text());
-              console.log(Name);
-                restArr.push(Name);
-
-
+    console.log(Name);
+    restArr.push(Name);
 
     var queryURL = "https://restcountries.eu/rest/v2/name/" + countryName + "?fullText=true";
 
-$.ajax({
-url: queryURL,
-method: "GET"
-})
+    $.ajax({
+        url: queryURL,
+        method: "GET"
+    })
 
-.then(function (response) {
-  var currencies = response[0].currencies;
-  var currenciesString = currencies.map(function(currency){
-      var currencyName = "Currency: " +  currency['name'];
-      console.log(currencyName);
-      restArr.push(currencyName);
-  });
-  var capital = ("Capital: " + response[0].capital);
-  console.log(capital);
-  restArr.push(capital);
+        .then(function (response) {
+            var currencies = response[0].currencies;
+            var currenciesString = currencies.map(function (currency) {
+                var currencyName = "Currency: " + currency['name'];
+                console.log(currencyName);
+                restArr.push(currencyName);
+            });
+            var capital = ("Capital: " + response[0].capital);
+            console.log(capital);
+            restArr.push(capital);
 
-var languages = response[0].languages;
-var languagesString = languages.map(function(language){
-var langName = "Language: " + language['name'];
-console.log(langName);
-restArr.push(langName);
+            var languages = response[0].languages;
+            var languagesString = languages.map(function (language) {
+                var langName = "Language: " + language['name'];
+                console.log(langName);
+                restArr.push(langName);
 
+            });
+            var population = "Population: " + response[0].population;
+            console.log(population);
+            restArr.push(population);
+
+
+            var region = "Region: " + response[0].region;
+            console.log(region);
+            restArr.push(region);
+
+
+            console.log(restArr);
+            var ul = $("<ul>");
+
+            restArr.forEach(function (item) {
+                var li = $("<li>");
+                ul.append(li);
+                li.text(item);
+                $(".countryFacts").append(li);
+            });
+            if (restArr.length >= 6) {
+                restArr = [];
+            };
+
+
+        });
 });
-var population = "Population: " + response[0].population;
-console.log(population);
-restArr.push(population);
-
-
-var region = "Region: " + response[0].region;
-console.log(region);
-restArr.push(region);
-
-
-  console.log(restArr);
-  var ul = $("<ul>");
-
-  restArr.forEach(function (item) {
-      var li = $("<li>");
-      ul.append(li);
-      li.text(item);
-      $(".countryFacts").append(li);
-  });
-
-
-
-});
-}
 
 // initialization
 google.maps.event.addDomListener(window, 'load', initialize);
