@@ -19,11 +19,11 @@ p { padding-top: 10px;
    } */
 
 .factBlock {
-    height: 350px;
+    height: 320px;
     
 }
 .facts {
-    height: 425px;
+    height: 425 px;
     padding-top: 20px;
 }
 
@@ -152,4 +152,5 @@ h5, h1, .searchBar, .factToDoItem, .factListItem {
 
 .btn {
     font-family: 'Roboto', sans-serif; 
+    margin-top: 30px;
 }
