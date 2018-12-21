@@ -173,6 +173,7 @@ function createMarker(obj) {
         console.log(queryURL2);
         var new_img = $("<img>");
         new_img.attr("src", queryURL2);
+        new_img.addClass("googleImg")
         //$('#category').text(response.result.types[0]);
         new_img.width('33%');
         new_img.height('300px');
