@@ -8,15 +8,12 @@
     <!-- Bootstrap CDN -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
         crossorigin="anonymous" />
-
+    <!--- jQuery CDN -->
     <!-- Font Awesome CDN -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP"
         crossorigin="anonymous">
     <!-- CSS link-->
-    <link rel="stylesheet" href="aboutus.css">
     <link rel="stylesheet" herf="reset.css">
-    <!-- 12/19 added javascript  -->
-    <link rel="javascript" href="assets/javascript/js.js">
     <!-- DSB 12/16 Added -->
     <link rel="stylesheet" href="./assets/css/style.css">
 
@@ -26,35 +23,35 @@
 <body>
     <!-- Main Container -->
     <div class="contanier">
-        <!-- Start of Nav Bar -->
-        <div class="row">
-            <div class="col-md-12">
-                <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                    <a class="navbar-brand" href="#"></a><i class="fas fa-user-ninja"></i><a style="padding-left: 15px; padding-right: 10px;">Awesome
-                        Secret Agents</a>
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarNav">
-                        <ul class="navbar-nav">
-                            <li class="nav-item">
-                                <!-- DSB added links to pages -->
-                                <a class="nav-link" href="index.html">Home<span class="sr-only">(current)</span></a>
-                            </li>
-                            <li class="nav-item">
-                                <!-- DSB added links to pages -->
-                                <a class="nav-link" href="aboutus.html">About Us</a>
-                            </li>
-                            <li class="nav-item">
-                                <!-- DSB added links to pages -->
-                                <a class="nav-link" href="inspiration.html">Inspiration</a>
-                            </li>
-                    </div>
-                </nav>
-            </div>
+       <!-- Start of Nav Bar -->
+       <div class="row">
+        <div class="col-md-12">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <a class="navbar-brand" href="#"></a><i class="fas fa-user-ninja"></i><a style="padding-left: 15px; padding-right: 10px;">Awesome
+                    Secret Agents</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <!-- DSB added links to pages -->
+                            <a class="nav-link" href="index.html">Home<span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <!-- DSB added links to pages -->
+                            <a class="nav-link" href="aboutus.html">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <!-- DSB added links to pages -->
+                            <a class="nav-link" href="inspiration.html">Inspiration</a>
+                        </li>
+                </div>
+            </nav>
         </div>
-        <!-- End of Nav Bar-->
+    </div>
+    <!-- End of Nav Bar-->
         <!-- Start of the Carousel -->
         <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
             <ol class="carousel-indicators">
@@ -86,38 +83,35 @@
                 <span class="sr-only">Next</span>
             </a>
         </div>
-
-        <!-- End of carousel -->
-        
         <!--Search Bar-->
         <form algin="center">
             <h1 class="discover">Discover Your World</h1>
-            <!-- 12/19 following div needs review -->
             <div class="row">
+
             </div>
             <div class="form-group searchBar">Search a City
                 <input id="gmap_where" type="text" name="gmap_where" />
-                <div class="btn btn-primary form-group" id="findAddressButton" onclick="findAddress(); return false;"><i
-                        class="fas fa-search"></i></div>
+                <div class="btn btn-primary form-group" id="findAddressButton" onclick="findAddress(); return false;"><i class="fas fa-search"></i></div>
+
             </div>
-            <input type="hidden" id="lat" name="lat" value="40.7143528" />
-            <input type="hidden" id="lng" name="lng" value="-74.0059731" />
-        </form>
+
+
+    </div>
+    <input type="hidden" id="lat" name="lat" value="40.7143528" />
+    <input type="hidden" id="lng" name="lng" value="-74.0059731" />
+    </form>
     </div>
     <!-- End of carousel -->
-   
     <!-- Begin Destination Facts -->
+
+
     <div class="container">
+        <div class="cityTitle">CITY</div>
         <div class="row facts">
             <div class="col-md-6 factBlock">
                 <h1 class="title">COUNTRY FACTS</h1>
-                <ol>
-                    <li>Fact item</li>
-                    <li>Fact item</li>
-                    <li>Fact item</li>
-                    <li>Fact item</li>
-                    <li>Fact item</li>
-                </ol>
+                <div class="countryFacts">
+                </div>
             </div>
             <div class="col-md-6">
                 <a><img src="./images/hawaii960px.jpg" alt="Hawaii" style="max-width:100%;height:auto;"></a>
@@ -130,8 +124,7 @@
     <!-- Start of Things to Do-->
     <div class="container">
         <div class="row facts todoBlock">
-            <div class="col-md-6 ttd">
-                <h1 class="title">THINGS TO DO</h1>
+            <div class="col-md-6">
                 <div id="gmap_canvas"></div>
                 <label for="gmap_keyword">Keyword (optional):</label>
                 <input id="gmap_keyword" type="text" name="gmap_keyword" />
@@ -164,21 +157,21 @@
                 <div id="button1" class="btn btn-primary" onclick="findPlaces(); return false;"><i class="fas fa-search"></i></div>
             </div>
             <div class="col-md-6">
-                <!--<a><img src="./images/hawaii960px.jpg" alt="Hawaii" style="max-width:100%;height:auto;"></a> -->
-                <!-- <a href="https://placeholder.com"><img src="https:/via.placeholder.com/180?text=Photo+Placeholder style="
-                            style="max-width:100%;height:auto;" class="b"></a> -->
+                    <h1 class="title">THINGS TO DO</h1>
                 <div id="category"></div>
-                <div id="photos-div">Hello World, things to do will go here </div>
+                <div id="photos-div"> </div>
 
             </div>
         </div>
         <div class="row">
             <div class="col-md-12">
+                <div id = "photography-div"> </div>
                 <hr>
             </div>
         </div>
 
     </div>
+    
     <div class="row">
         <div class="col-md-12">
             <div class="footer todoFooter">
@@ -186,14 +179,12 @@
                 <p class="text-footer">"Never regret what you did not do. Always travel safe, travel far, travel wide,
                     and
                     travel often."</p>
-                <p class="footer-signature"><i class="fas fa-user-ninja"></i> Awesome Secret Agents</p>
+                <p class="footer-signature"> - <i class="fas fa-user-ninja"></i> Awesome Secret Agents</p>
             </div>
         </div>
     </div>
 
 
-
-    <!--- jQuery CDN -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
@@ -205,105 +196,6 @@
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAB6hBjI4Pq16M1kIXqSD7rW2hXcY9CE_k&libraries=places"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="./js.js"></script>
-    <script type="text/javascript">
-        var locations = [
-          ['Venice, Italy', 45.429267, 12.277523],
-          ['Hong Kong, China', 22.282391, 114.072465],
-          ['Istanbul, Turkey', 41.057340, 28.947132],
-          ['New York, NY', 40.709323, -73.986501],
-          ['London, UK', 51.514246, -0.151205],
-          ['Chefchaouen, Morocco', 35.169827, -5.275102],
-          ['Paris, France', 48.8566, 2.3522],
-          ['Cape Town, South Africa', -33.9249, 18.4241],
-          ['Amsterdam, the Netherlands', 52.3680, 4.9036],
-          ['St. Petersburg, Russia', 60.012870, 30.424343],
-          ['Beirut, Lebanon', 33.8938, 35.5018],
-          ['Kyoto, Japan', 35.0016, 135.7680],
-          ['Queenstown, New Zealand', -45.031031, 168.662244],
-          ['Barcelona, Spain', 41.3851, -2.1734],
-          ['Singapore', 1.3521, 103.8198],
-          ['Havana, Cuba', 23.1136, -82.3666],
-          ['Florence, Italy', 43.769615, 11.259838],
-          ['Sydney, Australia', -33.859302, 151.179679],
-          ['Lisbon, Portugal', 38.7223, -9.1393],
-          ['Rio de Janeiro, Brazil', -22.9068, -43.1729],
-          ['Jaipur, India', 26.9124, 75.7873],
-          ['Lucerne, Switerzerland', 47.0502, 8.3093],
-          ['Shanghai, China', 31.2304, 121.4737],
-          ['San Francisco, California', 37.7749, -122.4194],
-          ['Rome, Italy', 41.9028, 12.4964],
-          ['Bruges, Belgium', 51.2093, 3.2247],
-          ['Stockholm, Sweden', 59.3293, 18.0686],
-          ['Cartagena, Columbia', 10.3910, -75.4794],
-          ['Budapest, Hungary', 47.4979, 19.0402],
-          ['Valparaiso, Chile', 33.0472, 71.6127],
-          ['Prague, Czech Republic', 50.0755, 14.4378],
-          ['Edinburgh, Scotland', 55.9533, 3.1833],
-          ['Busan, South Korea', 35.1796, 129.0756],
-          ['Mexico City, Mexico', 19.4326, -99.1332],
-          ['Charleston, South Carolina', 32.78115, -79.9316],
-          ['Dubrovnik, Croatia', 42.6507, 18.0944],
-          ['Riga, Latvia', 56.9496, 24.1052],
-          ['Quito, Ecuador', -0.179040, -78.462131],
-          ['Vienna, Austria', 48.2802, 16.3738],
-          ['Quebec City, Canada', 46.8139, 71.2080],
-          ['Jerusalem', 31.7683, 35.2137],
-          ['Buenos Aires, Argentina', -34.60851, -58.37349],
-          ['Isfahan, Iran', 32.663997, 51.680161],
-          ['Seville, Spain', 37.3891, -5.9845],
-          ['Muscat, Oman', 23.5829, 58.4059],
-          ['Chicago, Illinois', 41.8781, -87.6298],
-          ['Kiev, Ukraine', 50.4501, 30.5234],
-          ['Ho Chi Minh, City, Vietnam', 10.8231, 106.6297],
-          ['Hamburg, Germany', 53.5511, 9.9937],
-          ['Krakow, Poland', 50.0647, 19.9450],
-     
-        ];
-     
-        var map = new google.maps.Map(document.getElementById('map'), {
-          zoom: 2,
-          center: new google.maps.LatLng(41.9028, 12.4964),
-          mapTypeId: google.maps.MapTypeId.ROADMAP
-        });
-     
-        var infowindow = new google.maps.InfoWindow();
-     
-        var marker, i;
-     
-        for (i = 0; i < locations.length; i++) {
-          marker = new google.maps.Marker({
-            position: new google.maps.LatLng(locations[i][1], locations[i][2]),
-            map: map
-          });
-     
-          google.maps.event.addListener(marker, 'click', (function (marker, i) {
-            return function () {
-              infowindow.setContent(locations[i][0]);
-              infowindow.open(map, marker);
-            }
-          })(marker, i));
-     
-     
-        }
-     
-        function initMap() {
-          var myLatLng = {
-            lat: -25.363,
-            lng: 131.044
-          };
-     
-          var map = new google.maps.Map(document.getElementById('map'), {
-            zoom: 4,
-            center: myLatLng
-          });
-     
-          var marker = new google.maps.Marker({
-            position: myLatLng,
-            map: map,
-            title: 'Hello World!'
-          });
-        }
-      </script> 
 </body>
 
 </html>

@@ -13,10 +13,6 @@ p { padding-top: 10px;
     font-family: 'Roboto', sans-serif; 
      
 }
-/* 
-.ttd { 
-    height: 380px;
-   } */
 
 .factBlock {
     height: 320px;
@@ -33,8 +29,7 @@ p { padding-top: 10px;
 
 .todoFooter {
     padding: 10px;
-    
-    
+     
 }
 
 
@@ -49,10 +44,13 @@ p { padding-top: 10px;
       
     }
 
+/* profile photo div */
 .b {     
     margin-bottom: 5%;
     margin-top: 5%;
-         grid-gap: 5%;
+    grid-gap: 5%;
+    width: 175px;
+    height: 175px;
 }
 
 /* dianna end*/
@@ -72,7 +70,7 @@ p { padding-top: 10px;
 }
 
 form {
-    margin-top: 150px;
+    margin-top: 60  px;
     width: 50%;
     margin-left: 25%;
 }
@@ -156,4 +154,35 @@ h5, h1, .searchBar, .factToDoItem, .factListItem {
 .btn {
     font-family: 'Roboto', sans-serif; 
     margin-top: 30px;
+}
+
+#gmap_canvas
+{
+    height: 300px;
+    width: 500px;
+}
+
+/* Added style to google image div */
+
+.googleImg { 
+    /* margin: 15px; */
+    padding: 2%;
+    grid-gap: 5%;
+    box-shadow: 5px 5px 5px #777777;  
+    align-content: center;  
+    margin: auto;  
+    }
+
+/* added formating to title in home */
+.cityTitle {
+    text-align: center;
+    color:#0081CF;
+    font-size: 32px;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif; 
+    }
+
+#photography-div {
+   
+    width: 100%
 }

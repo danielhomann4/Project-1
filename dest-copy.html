@@ -9,23 +9,13 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
         crossorigin="anonymous" />
     <!--- jQuery CDN -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-        crossorigin="anonymous"></script>
-    <!-- JavaScript CDN -->
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
-        crossorigin="anonymous"></script>
     <!-- Font Awesome CDN -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP"
         crossorigin="anonymous">
     <!-- CSS link-->
-    <link rel="stylesheet" href="aboutus.css">
     <link rel="stylesheet" herf="reset.css">
     <!-- DSB 12/16 Added -->
     <link rel="stylesheet" href="./assets/css/style.css">
-    <!-- 12/19 added javascript  -->
-    <link rel="javascript" href="assets/javascript/js.js">
 
     <title>Project 1</title>
 </head>
@@ -55,7 +45,7 @@
                             </li>
                             <li class="nav-item">
                                 <!-- DSB added links to pages -->
-                                <a class="nav-link" href="inspiration.html">Inspiration</a>
+                                <a class="nav-link" href="destinationpage.html">Destination Info</a>
                             </li>
                     </div>
                 </nav>
@@ -93,27 +83,37 @@
                 <span class="sr-only">Next</span>
             </a>
         </div>
+        <!--Search Bar-->
+        <form algin="center">
+            <h1 class="discover">Discover Your World</h1>
+            <div class="row">
 
+            </div>
+            <div class="form-group searchBar">Search a City
+                <input id="gmap_where" type="text" name="gmap_where" />
+                <div class="btn btn-primary form-group" id="findAddressButton" onclick="findAddress(); return false;"><i class="fas fa-search"></i></div>
+
+            </div>
+
+
+    </div>
+    <input type="hidden" id="lat" name="lat" value="40.7143528" />
+    <input type="hidden" id="lng" name="lng" value="-74.0059731" />
+    </form>
     </div>
     <!-- End of carousel -->
     <!-- Begin Destination Facts -->
+
+
     <div class="container">
         <div class="row facts">
             <div class="col-md-6 factBlock">
-                <h1 class="title">ABOUT US</h1>
-                <p><span>Our vision was to create a landing page to inspire your travel dreams and ignite the
-                        wanderlust in
-                        all of us.</span></p>
-                <p><span>Whether you discover with us, seek with us, or deam with us, we believe our purpose is to
-                        create
-                        impressions that will stay with you for a lifetime.</span></p>
-                <p><span>It comes from our belief that life is richer when we truly connect to the people and thee
-                        world
-                        around us. As Mika Diffee once said, <i>"Travel is the only thing you buy that makes you
-                            richer".</i></span></p>
+                <h1 class="title">COUNTRY FACTS</h1>
+                <div class="countryFacts">
+                </div>
             </div>
             <div class="col-md-6">
-                <a><img src="./images/plane.png" alt="Hawaii" style="max-width:100%;height:auto;"></a>
+                <a><img src="./images/hawaii960px.jpg" alt="Hawaii" style="max-width:100%;height:auto;"></a>
             </div>
         </div>
 
@@ -124,50 +124,56 @@
     <div class="container">
         <div class="row facts todoBlock">
             <div class="col-md-6 ttd">
-                <h1 class="title">OUR TEAM</h1>
-                <p>Awesome Secret Agents are a group comprised of talented and travel inspired individuals. Our
-                    development team was put together by our fearless leader, Sammy Roberts. Our entire team collabored
-                    to
-                    fuse together a user experience in travel that we hope you will
-                    enjoy.</p>
-                <p>Our front-end development was inspired and executed by our travel consultants Dianna Sutton
-                    Brown, Kristine Caponpon, and Daniel Homann. (top row: left to right).</p>
-                <p>Our API gurus include Desiree Ibon, and Sammy Albasateneh with research and project support done
-                    in Trello by Mika Diffee. (bottom row: left to right).</p>
-
-            </div>
-
-            <div class="col-md-2">
-                <!--- Dianna's Photo -->
-                <img src="./Images/dianna.png" 
-                        class="b" alt="Dianna Sutton Brown"></a>
-                <!-- Desiree' Photo -->
-                <img src="./Images/Desiree.png" 
-                        class="b" alt="Desiree Ibon"></a>
-            </div>
-            <div class="col-md-2">
-                <!-- Kristine's Photo-->
-                <img src="./Images/Kristine.jpg" 
-                        class="b" alt="Kristine Caponpon"></a>
-                <!-- Sammy's Photo-->
-               <img src="./Images/sammy546.jpg" 
-                        class="b" alt="Sammy Albasateneh"></a>
-            </div>
-            <div class="col-md-2">
-                <!-- Daniel's Photo-->
-               <img src="./Images/Daniel.JPG" 
-                        class="b" alt="Daniel Homann"></a>
-                <!-- Mika's Photo -->
-                <img src="./Images/mika1.PNG" 
-                        class="b" alt="Mika Diffee"></a>
-            </div>
+                <h1 class="title">THINGS TO DO</h1>
+                <div id="gmap_canvas"></div>
+                <label for="gmap_keyword">Keyword (optional):</label>
+                <input id="gmap_keyword" type="text" name="gmap_keyword" />
 
 
+                <label for="gmap_type">Type:</label>
+                <select id="gmap_type">
+                    <option value="art_gallery">art_gallery</option>
+                    <option value="atm">atm</option>
+                    <option value="bank">bank</option>
+                    <option value="bar">bar</option>
+                    <option value="cafe">cafe</option>
+                    <option value="food">food</option>
+                    <option value="hospital">hospital</option>
+                    <option value="hotel">hotel</option>
+                    <option value="store">store</option>
+                </select>
+
+
+                <label for="gmap_radius">Radius:</label>
+                <select id="gmap_radius">
+                    <option value="500">500</option>
+                    <option value="1000">1000</option>
+                    <option value="1500">1500</option>
+                    <option value="5000">5000</option>
+                </select>
+
+                <input type="hidden" id="lat" name="lat" value="40.7143528" />
+                <input type="hidden" id="lng" name="lng" value="-74.0059731" />
+                <div id="button1" class="btn btn-primary" onclick="findPlaces(); return false;"><i class="fas fa-search"></i></div>
+            </div>
+            <div class="col-md-6">
+                <!--<a><img src="./images/hawaii960px.jpg" alt="Hawaii" style="max-width:100%;height:auto;"></a> -->
+                <!-- <a href="https://placeholder.com"><img src="https:/via.placeholder.com/180?text=Photo+Placeholder style="
+                    style="max-width:100%;height:auto;" class="b"></a> -->
+                <div id="category"></div>
+                <div id="photos-div"> </div>
+
+            </div>
         </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div id = "photography-div"> </div>
+                <hr>
+            </div>
+        </div>
+
     </div>
-
-
-    <!-- new footer -->
+    
     <div class="row">
         <div class="col-md-12">
             <div class="footer todoFooter">
@@ -175,11 +181,23 @@
                 <p class="text-footer">"Never regret what you did not do. Always travel safe, travel far, travel wide,
                     and
                     travel often."</p>
-                <p class="footer-signature"><i class="fas fa-user-ninja"></i> Awesome Secret Agents</p>
+                <p class="footer-signature"> - <i class="fas fa-user-ninja"></i> Awesome Secret Agents</p>
             </div>
         </div>
     </div>
 
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <!-- JavaScript CDN -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAB6hBjI4Pq16M1kIXqSD7rW2hXcY9CE_k&libraries=places"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="./js.js"></script>
 </body>
 
 </html>

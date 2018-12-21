@@ -168,14 +168,14 @@ function createMarker(obj) {
         console.log(response.result.photos[0].photo_reference);
         ref = response.result.photos[0].photo_reference;
 
-
+        //THIS IS WHERE I USE THE GOOGLE PHOTO REFERENCE TO APPEND PHOTOS TO THE BOTTOM DIV 
         var queryURL2 = 'https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photoreference=' + ref + '&key=AIzaSyAB6hBjI4Pq16M1kIXqSD7rW2hXcY9CE_k';
-        image_ref =
         console.log(queryURL2);
         var new_img = $("<img>");
         new_img.attr("src", queryURL2);
+        new_img.addClass("googleImg")
         //$('#category').text(response.result.types[0]);
-        new_img.width('300px');
+        new_img.width('33%');
         new_img.height('300px');
         $('#photos-div').append('<li>' + response.result.name + ': ' + response.result.vicinity + '</li>');
     
@@ -190,7 +190,7 @@ var autocomplete = new google.maps.places.Autocomplete(input, { types: ['(cities
 google.maps.event.addListener(autocomplete, 'place_changed', function () {
     var place = autocomplete.getPlace();
 $(".countryFacts").empty();
-    var country = place.adr_address
+    var country = place.adr_address;
     var html = "<div>" + country.split(",").join("") + "</div>";
     var countryName = ($(html).find(".country-name").text());
     var Name = "Country: " + ($(html).find(".country-name").text());
