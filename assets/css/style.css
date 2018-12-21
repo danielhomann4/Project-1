@@ -157,3 +157,9 @@ h5, h1, .searchBar, .factToDoItem, .factListItem {
     font-family: 'Roboto', sans-serif; 
     margin-top: 30px;
 }
+
+#gmap_canvas
+{
+    height: 300px;
+    width: 500px;
+}
