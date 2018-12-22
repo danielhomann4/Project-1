@@ -114,7 +114,7 @@
                 </div>
             </div>
             <div class="col-md-6">
-                <a><img src="./images/hawaii960px.jpg" alt="Hawaii" style="max-width:100%;height:auto;"></a>
+                <a><img src="./images/travelphoto.jpeg" alt="Hawaii" style="max-width:100%;height:auto;"></a>
             </div>
         </div>
 
@@ -127,9 +127,9 @@
             <div class="col-md-6">
                 <div id="gmap_canvas"></div>
                 <label for="gmap_keyword">Keyword (optional):</label>
+                
                 <input id="gmap_keyword" type="text" name="gmap_keyword" />
-
-
+                <div id="button1" class="btn btn-primary" onclick="findPlaces(); return false;"><i class="fas fa-search"></i></div> 
                 <label for="gmap_type">Type:</label>
                 <select id="gmap_type">
                     <option value="art_gallery">art_gallery</option>
@@ -145,7 +145,7 @@
 
                 <input type="hidden" id="lat" name="lat" value="40.7143528" />
                 <input type="hidden" id="lng" name="lng" value="-74.0059731" />
-                <div id="button1" class="btn btn-primary" onclick="findPlaces(); return false;"><i class="fas fa-search"></i></div>
+                
             </div>
             <div class="col-md-6" id = "things-list">
                     <h1 class="title">THINGS TO DO</h1>

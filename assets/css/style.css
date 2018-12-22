@@ -57,13 +57,6 @@ p { padding-top: 10px;
 /* dianna end*/
 
 
-
-/* daniel */
-/* .caro-div {
-    background-image: url('./Images/Hawaii.jpg');
-    height: 900px;
-} */
-
 .caro-wrapper {
     display: flex;
     justify-content: center;
@@ -148,6 +141,7 @@ form {
     font-family: 'Roboto', sans-serif;
     text-align: center;
 }
+
 h5, h1, .searchBar, .factToDoItem, .factListItem {
     font-family: 'Roboto', sans-serif; 
 }
@@ -188,3 +182,14 @@ h5, h1, .searchBar, .factToDoItem, .factListItem {
     width: 100%
 }
 
+/* magnifying glass */
+
+
+#findAddressButton {
+    margin-top: 10px;
+}
+
+#button1 {
+   margin-bottom: 35px;
+  
+}
