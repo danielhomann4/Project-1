@@ -25,6 +25,7 @@ p { padding-top: 10px;
 
 .todoBlock { 
     margin-top: 5px;
+    margin-bottom: 50px;
 }
 
 .todoFooter {
@@ -186,3 +187,4 @@ h5, h1, .searchBar, .factToDoItem, .factListItem {
    
     width: 100%
 }
+
