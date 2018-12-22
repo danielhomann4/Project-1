@@ -42,6 +42,11 @@ function findbyDestination() {
 
 }
 
+function appendCity() {
+    var location = document.getElementById("gmap_where").value;
+    $(".cityTitle").text(location);
+}
+
 // find address function
 function findAddress() {
     var address = document.getElementById("gmap_where").value;
@@ -67,7 +72,7 @@ function findAddress() {
                 //icon: 'marker.png'
             });
             var type = "restaurant";
-            var radius = 500;
+            var radius = 1500;
             //var radius = document.getElementById('gmap_radius').value;
             //var keyword = document.getElementById('gmap_keyword').value;
             var lat = document.getElementById('lat').value;
@@ -98,8 +103,8 @@ function findPlaces() {
     // prepare variables (filter)
     var type = document.getElementById('gmap_type').value;
     //var type = "art gallery";
-    //var radius = 500;
-    var radius = document.getElementById('gmap_radius').value;
+    var radius = 1500;
+    //var radius = document.getElementById('gmap_radius').value;
     var keyword = document.getElementById('gmap_keyword').value;
     var lat = document.getElementById('lat').value;
     var lng = document.getElementById('lng').value;
@@ -189,6 +194,7 @@ var input = document.getElementById('gmap_where');
 var autocomplete = new google.maps.places.Autocomplete(input, { types: ['(cities)'] });
 google.maps.event.addListener(autocomplete, 'place_changed', function () {
     var place = autocomplete.getPlace();
+    $(".countryFacts").empty();
 
     var country = place.adr_address;
     var html = "<div>" + country.split(",").join("") + "</div>";

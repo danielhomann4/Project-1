@@ -91,7 +91,7 @@
             </div>
             <div class="form-group searchBar">Search a City
                 <input id="gmap_where" type="text" name="gmap_where" />
-                <div class="btn btn-primary form-group" id="findAddressButton" onclick="findAddress(); return false;"><i class="fas fa-search"></i></div>
+                <div class="btn btn-primary form-group" id="findAddressButton" onclick="findAddress(); appendCity(); return false;"><i class="fas fa-search"></i></div>
 
             </div>
 
@@ -143,22 +143,12 @@
                     <option value="store">store</option>
                 </select>
 
-
-                <label for="gmap_radius">Radius:</label>
-                <select id="gmap_radius">
-                    <option value="500">500</option>
-                    <option value="1000">1000</option>
-                    <option value="1500">1500</option>
-                    <option value="5000">5000</option>
-                </select>
-
                 <input type="hidden" id="lat" name="lat" value="40.7143528" />
                 <input type="hidden" id="lng" name="lng" value="-74.0059731" />
                 <div id="button1" class="btn btn-primary" onclick="findPlaces(); return false;"><i class="fas fa-search"></i></div>
             </div>
-            <div class="col-md-6">
+            <div class="col-md-6" id = "things-list">
                     <h1 class="title">THINGS TO DO</h1>
-                <div id="category"></div>
                 <div id="photos-div"> </div>
 
             </div>
